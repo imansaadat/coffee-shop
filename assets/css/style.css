@@ -9,12 +9,15 @@
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   text-transform: capitalize;
+  transition: 0.3s;
 }
 
 html {
@@ -230,7 +233,6 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
-  transition: 0.3s;
 }
 
 .gallery .gallery_cols .col:hover::after {
